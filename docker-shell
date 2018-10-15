@@ -2,4 +2,5 @@
 
 CURRENT_PATH=${PWD##*/}
 
-docker run -it -v $PWD:/$CURRENT_PATH --security-opt seccomp=unconfined --workdir=/$CURRENT_PATH  tomerbd/gcc-gdb-dockerfile bash
+docker build -t pba .
+docker run -it -v $PWD:/$CURRENT_PATH --security-opt seccomp=unconfined --workdir=/$CURRENT_PATH pba bash
