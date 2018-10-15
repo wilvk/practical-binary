@@ -1,0 +1,3 @@
+#!/bin/bash
+
+docker run -it -v $PWD:/gas-asm-fib --security-opt seccomp=unconfined --workdir=/gas-asm-fib  tomerbd/gcc-gdb-dockerfile bash
