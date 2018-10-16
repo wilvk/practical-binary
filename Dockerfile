@@ -8,4 +8,7 @@ RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 60 --slave /
 RUN apt-get -y install build-essential
 RUN apt-get -y install libc6-dbg gdb valgrind
 RUN apt-get -y install binutils-dev
+RUN apt-get -y install strace
+RUN apt-get -y install ltrace
+RUN apt-get -y install vim-common
 CMD ["/bin/bash"]
