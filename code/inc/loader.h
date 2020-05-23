@@ -5,6 +5,8 @@
 #include <string>
 #include <vector>
 
+#define bfd_get_section_flags(bfd, ptr) ((void) bfd, (ptr)->flags)
+
 class Binary;
 class Section;
 class Symbol;
